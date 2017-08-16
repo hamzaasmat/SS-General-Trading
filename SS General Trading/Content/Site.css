@@ -49,6 +49,12 @@ body{
 .navbar-inverse .navbar-brand:hover{
     color: #aaa;
 }
+.navbar-inverse .navbar-brand img{
+    margin-top: -45px;
+    width: 125px !important;
+    height: 120px !important;
+    position: absolute;
+}
 
 .login-btn{
     border: 1px solid #fff;
@@ -72,6 +78,11 @@ body{
         /*padding-left: 30px;*/
         width: 100%;
         text-align:center;
+    }
+    .navbar-inverse .navbar-brand img{
+        width: 80px !important; 
+        height: 85px !important;
+        margin-top: -30px;
     }
 }
 
@@ -207,5 +218,53 @@ body{
     .feature-icon{
         text-align: center !important;
         margin-left: 40% !important;
+    }
+}
+
+/*
+    ---------
+      LOGIN
+    ---------
+*/
+
+.login-frm{
+    width:40%;
+    height: 500px;
+    top: 50% !important;
+    left: 50% !important;
+    /*margin-top: 10%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+.login-frm input[type=text], input[type=password]{
+    width: 80% !important;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    box-shadow: none !important;
+    height: 60px !important;
+    outline: none;
+    background-color: #ddd;
+    transition: .20s all;
+}
+.login-frm input[type=text]:focus, input[type=password]:focus{
+    background-color: #fff;
+}
+.login-frm .btn-login{
+    width: 80% !important;
+    height: 50px !important;
+    margin-bottom: 10px;
+}
+.login-frm .checkbox{
+    margin-left: 50px;
+}
+.login-frm .checkbox label{
+    float: left;
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow-y: hidden;
+    }
+    .login-frm input[type=text], input[type=password]{
+        width: 200% !important;
+        margin-left: -80px !important;
     }
 }
