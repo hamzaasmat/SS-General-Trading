@@ -1,24 +1,211 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/*main styles*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans !important;
+    overflow-x: hidden;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+
+/*myCarousel*/
+
+
+#myCarousel{
+    margin-top: -130px !important;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    width: 100% !important;
+    height: 700px !important;
+}
+.carousel-caption h3{
+    margin-top: -350px !important;
+    font-size: 80px;
+}
+
+/*navigation*/
+
+.navbar-inverse {
+     background-color: transparent; 
+    /* border-color: #080808; */
+    /* height: 40px !important; */
+    padding: 20px;
+    border:none;
+    border-radius:0px;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color: #fff;
+    transition: .20s all;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: #aaa;
+}
+.navbar-inverse .navbar-brand{
+    color: #fff;
+    transition: .20s all;
+}
+.navbar-inverse .navbar-brand:hover{
+    color: #aaa;
+}
+
+.login-btn{
+    border: 1px solid #fff;
+    border-radius: 40px;
+    width: 100px;
+    /*text-align: center !important;*/
+    padding-right: 27px !important;
+    transition: .20s all;
+}
+.login-btn:hover, .login-btn a:hover{
+    background-color: #fff;
+    color: #333 !important;
+}
+
+
+@media screen and (max-width: 768px){
+    .navbar-inverse{
+        background-color: #12384C !important;
+    }
+    .login-btn{
+        /*padding-left: 30px;*/
+        width: 100%;
+        text-align:center;
+    }
+}
+
+
+/*site footer*/
+
+.site-footer{
+    padding: 40px;
+    background-color: #12384C;
+    color: #fff;
+}
+
+.site-footer h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 15px;
+    font-family: Open Sans;
+}
+
+.site-footer{
+    list-style-type: none;
+    display: block;
+}
+.site-footer a{
+    color: #aaa;
+    transition: .20s all;
+    text-decoration: none;
+    /*float: left;*/
+    /*display: block;*/
+}
+.site-footer a:hover{
+    color: #fff;
+}
+
+.footer-social{
+    display: inline-block;
+    margin-top: 50px;
+}
+.footer-social a{
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+/*home page content*/
+
+/*
+    --------------------
+    Introduction Section
+    --------------------
 */
-.dl-horizontal dt {
-    white-space: normal;
+
+#introduction{
+    margin-top: 60px;
+}
+#introduction h1{
+    color: #555;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    margin-bottom: 30px;
+    font-family: Josefin Sans;
+}
+#introduction p{
+    color: #aaa;
+    text-align: center;
+    letter-spacing: 3px;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/*
+    --------------------
+      product Section
+    --------------------
+*/
+
+#product_section{
+    /*background-color: #f3f3f3;*/
+    padding: 30px;
+    margin-top:60px;
+}
+#product_section h2{
+    text-align: center;
+    color: #555;
+    border-top: 1px solid #ddd;
+    padding-top: 50px;
+    /*margin-bottom: 100px;*/
+    font-family: Josefin Sans;
+    font-weight:200;
+    /*text-transform: uppercase;*/
+}
+#product_section p{
+    color: #aaa;
+    margin-bottom: 100px;
+}
+#product_section h3{
+    font-size: 18px;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    color: #12384C;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+#product_section p{
+    color: #aaa;
+    font-family: Open Sans;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.feature-icon{
+    width: 80px;
+    height: 80px;
+    /*padding-left: 12px;*/
+    text-align: center;
+    line-height: 80px;
+    border: 2px solid cornflowerblue;
+    border-radius: 100%;
+    color: cornflowerblue;
+    font-size: 40px !important;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 768px){
+    #product_section{
+        text-align: center;
+    }
+    .feature-icon{
+        text-align: center !important;
+        margin-left: 40% !important;
+    }
 }
