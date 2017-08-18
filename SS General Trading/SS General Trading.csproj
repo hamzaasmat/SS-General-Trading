@@ -258,6 +258,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-SS General Trading-20170814110254.mdf" />
+    <Content Include="App_Data\aspnet-SS General Trading-20170814110254_log.ldf">
+      <DependentUpon>aspnet-SS General Trading-20170814110254.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.css" />
@@ -427,9 +431,7 @@
     <Content Include="Views\Admin\Admin.cshtml" />
     <Content Include="Views\Shared\_Layout - Admin.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
