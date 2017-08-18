@@ -1,7 +1,106 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+@*<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>*@
+<style>
+    .bgimg {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
 
-<p>Use this area to provide additional information.</p>
+    .bgimg {
+        background-image: url('../../Content/images/about.jpg');
+        height: 600px;
+        margin-top: -130px;
+        transform: scale(1.05);
+    }
+    .about-overlay{
+        height: 600px;
+        background: -webkit-linear-gradient(bottom left,rgba(28,46,79,.62) 0,rgba(28,46,79,.7) 14.87%,rgba(45,83,123,.6) 100%);
+    /*background: linear-gradient(to bottom left,rgba(28,46,79,.62) 0,rgba(28,46,79,.7) 14.87%,rgba(45,83,123,.6) 100%);*/
+    }
+    .about-overlay h4{
+        text-align: center;
+        color: #fff;
+        /*position: absolute;*/
+        padding-top: 290px;
+        font-family: Josefin Sans;
+        font-size: 30px;
+        z-index: 999;
+    }
+    #about-section-1{
+        margin-top:100px !important;
+    }
+    #about-section-1 .container p{
+        color: #aaa !important;
+        font-size: 20px;
+        font-family: josefin Sans !important;
+        text-align: center !important;
+        margin-bottom: 60px;
+    }
+
+    #team h3{
+        color: #555;
+        text-align: center;
+    }
+    #team p{
+        color: #666;
+        font-size: 15px;
+        text-align: center;
+        font-family: Open Sans;
+        width: 50%;
+        line-height: 30px;
+    }
+    #team .dash{
+        width: 30px;
+        height:2px;
+        background-color: #aaa;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+</style>
+
+@* content start *@
+
+@* header *@
+
+<div class="bgimg">
+    <div class="about-overlay">
+        <h4>SS General Trading is a partnership firm<br /> based Lahore-Pakistan and engaged imports and exports.</h4>
+    </div>
+</div>
+
+
+<section id="about-section-1">
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+            <p>
+                Since inception, S.S General Trading has never compromised on excellence remaining always
+                competitive in the market. As a result the company has set unparalleled standards of
+                business growth. After capturing the domestic market, S.S General Trading decided to enter
+                into the international market.
+            </p>
+        </div>
+    </div>
+</section>
+<hr />
+
+
+<section id="team">
+    <div class="container">
+        <h3>OUR TEAM</h3>
+        <center>
+            <div class="dash"></div>
+            <p class="text-center">
+                A team of highly qualified/skilled professional/workers and sophisticated
+                infrastructure, tools is putting in the best efforts to make our products/services
+                unmatchable. Under the dynamic leadership of Managing Director of the company, has
+                infused missionary sprit in the staff which is our most valued asset.
+            </p>
+        </center>
+    </div>
+</section>

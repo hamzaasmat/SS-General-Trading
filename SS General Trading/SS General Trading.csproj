@@ -264,6 +264,7 @@
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Content\images\about.jpg" />
     <Content Include="Content\images\customer.jpeg" />
     <Content Include="Content\images\export.jpg" />
     <Content Include="Content\images\fbr.png" />
