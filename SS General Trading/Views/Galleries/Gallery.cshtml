@@ -3,5 +3,45 @@
     ViewBag.Title = "Gallery";
 }
 
-<h2>Gallery</h2>
+<style>
+    .bgimg {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
 
+    .bgimg {
+        background-image: url('../../Content/images/stat.jpg');
+        height: 300px;
+        margin-top: -130px;
+        transform: scale(1.05);
+    }
+
+    .about-overlay {
+        height: 300px;
+        background: -webkit-linear-gradient(bottom left,rgba(28,46,79,.62) 0,rgba(28,46,79,.7) 14.87%,rgba(45,83,123,.6) 100%);
+        /*background: linear-gradient(to bottom left,rgba(28,46,79,.62) 0,rgba(28,46,79,.7) 14.87%,rgba(45,83,123,.6) 100%);*/
+    }
+
+        .about-overlay h4 {
+            text-align: center;
+            color: #fff;
+            line-height: 300px;
+            /*position: absolute;*/
+            /*padding-top: 290px;*/
+            font-family: Josefin Sans;
+            font-size: 30px;
+            /*z-index: 999;*/
+        }
+</style>
+
+@* content start *@
+
+@* header *@
+
+<div class="bgimg">
+    <div class="about-overlay">
+        <h4>Gallery</h4>
+    </div>
+</div>
