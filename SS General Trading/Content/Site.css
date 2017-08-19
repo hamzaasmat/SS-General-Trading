@@ -14,12 +14,17 @@ body{
 #myCarousel{
     margin-top: -130px !important;
 }
+@media screen and (max-width: 768px){
+    #myCarousel{
+        margin-top: -20px !important;
+    }
+}
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
     width: 100% !important;
-    height: 700px !important;
+    /*height: 700px !important;*/
 }
-.carousel-caption h3{
+.carousel-caption h3 {
     margin-top: -350px !important;
     font-size: 80px;
 }
