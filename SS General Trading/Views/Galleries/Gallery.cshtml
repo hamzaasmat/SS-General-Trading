@@ -3,5 +3,74 @@
     ViewBag.Title = "Gallery";
 }
 
-<h2>Gallery</h2>
+<style>
+    .bgimg {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bgimg {
+        background-image: url('../../Content/images/stat.jpg');
+        height: 500px;
+        margin-top: -130px;
+        transform: scale(1.05);
+    }
+
+    .about-overlay {
+        height: 500px;
+        background: -webkit-linear-gradient(bottom left,rgba(28,46,79,.62) 0,rgba(28,46,79,.7) 14.87%,rgba(45,83,123,.6) 100%);
+        /*background: linear-gradient(to bottom left,rgba(28,46,79,.62) 0,rgba(28,46,79,.7) 14.87%,rgba(45,83,123,.6) 100%);*/
+    }
+
+        .about-overlay h4 {
+            text-align: center;
+            color: #fff;
+            line-height: 500px;
+            /*position: absolute;*/
+            /*padding-top: 290px;*/
+            font-family: Josefin Sans;
+            font-size: 30px;
+            /*z-index: 999;*/
+        }
+
+        #heading{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        #heading h3{
+            font-family: Josefin Sans;
+            font-size: 50px;
+            color: #555;
+            text-align: center;
+            font-weight: 700;
+        }
+        #heading p{
+            text-align: center;
+            color: #aaa;
+        }
+
+        
+
+</style>
+
+@* content start *@
+
+@* header *@
+
+<div class="bgimg">
+    <div class="about-overlay">
+        <h4>Gallery</h4>
+    </div>
+</div>
+
+
+<section id="heading">
+    <div class="container">
+        <h3>Showcase of our latest projects</h3>
+        <p>We believe in simple and efficient ways to grow a business by being smart.</p>
+    </div>
+</section>
+
 

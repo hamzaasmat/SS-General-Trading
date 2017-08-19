@@ -258,12 +258,17 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-SS General Trading-20170814110254.mdf" />
+    <Content Include="App_Data\aspnet-SS General Trading-20170814110254_log.ldf">
+      <DependentUpon>aspnet-SS General Trading-20170814110254.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Content\images\about.jpg" />
     <Content Include="Content\images\customer.jpeg" />
     <Content Include="Content\images\export.jpg" />
     <Content Include="Content\images\fbr.png" />
@@ -283,6 +288,12 @@
     <Content Include="Content\images\Service.jpg" />
     <Content Include="Content\images\ss general.png" />
     <Content Include="Content\images\stat.jpg" />
+    <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\css\animate.css" />
+    <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\css\animate.min.css" />
+    <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\css\bootstrap-dropdownhover.css" />
+    <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\css\bootstrap-dropdownhover.min.css" />
+    <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\js\bootstrap-dropdownhover.js" />
+    <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\js\bootstrap-dropdownhover.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -299,6 +310,7 @@
     </Content>
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootstrap-dropdownhover.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -344,6 +356,8 @@
     <Content Include="Content\font-awesome-4.7.0\scss\_screen-reader.scss" />
     <Content Include="Content\font-awesome-4.7.0\scss\_stacked.scss" />
     <Content Include="Content\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\LICENSE" />
+    <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\README.md" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -359,6 +373,9 @@
     <Content Include="site-images\bgs3.jpeg" />
     <Content Include="site-images\bgs4.jpeg" />
     <Content Include="site-images\bgs5.jpeg" />
+    <Content Include="site-images\slide11.jpg" />
+    <Content Include="site-images\slide22.jpg" />
+    <Content Include="site-images\slide33.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -426,9 +443,7 @@
     <Content Include="Views\Admin\Admin.cshtml" />
     <Content Include="Views\Shared\_Layout - Admin.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

@@ -14,12 +14,17 @@ body{
 #myCarousel{
     margin-top: -130px !important;
 }
+@media screen and (max-width: 768px){
+    #myCarousel{
+        margin-top: -20px !important;
+    }
+}
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
     width: 100% !important;
-    height: 700px !important;
+    /*height: 700px !important;*/
 }
-.carousel-caption h3{
+.carousel-caption h3 {
     margin-top: -350px !important;
     font-size: 80px;
 }
@@ -158,6 +163,7 @@ body{
     color: #aaa;
     text-align: center;
     letter-spacing: 3px;
+    margin-bottom: 40px;
 }
 
 /*
@@ -169,12 +175,11 @@ body{
 #product_section{
     /*background-color: #f3f3f3;*/
     padding: 30px;
-    margin-top:60px;
+    margin-top:40px;
 }
 #product_section h2{
     text-align: center;
     color: #555;
-    border-top: 1px solid #ddd;
     padding-top: 50px;
     /*margin-bottom: 100px;*/
     font-family: Josefin Sans;
@@ -252,6 +257,7 @@ body{
     width: 80% !important;
     height: 50px !important;
     margin-bottom: 10px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2) !important;
 }
 .login-frm .checkbox{
     margin-left: 50px;
@@ -261,10 +267,12 @@ body{
 }
 @media screen and (max-width: 768px){
     body{
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     .login-frm input[type=text], input[type=password]{
         width: 200% !important;
         margin-left: -80px !important;
     }
 }
+
+

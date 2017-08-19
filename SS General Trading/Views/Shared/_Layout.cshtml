@@ -4,12 +4,145 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+    <link href="~/Content/kybarg-bootstrap-dropdown-hover-c6ab463/css/animate.min.css" rel="stylesheet" />
+    
+
+
+
     <link href="~/Content/Site.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
     <link href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
+    <style>
+        #certified img{
+            -webkit-filter: grayscale(100%) !important; /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%) !important;
+            opacity: .4 !important;
+            transition: .30s all !important;
+        }
+        #certified img:hover{
+            -webkit-filter: grayscale(0) !important; /* Safari 6.0 - 9.0 */
+            filter: grayscale(0) !important;
+            opacity: .4 !important;
+            opacity: 1 !important;
+        }
+
+        #certified h3{
+            top: -8px;
+            padding: 0 40px;
+            background: #fff;
+            position: relative;
+            color: #97a8b8;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1.8px;
+            word-spacing: 1.6px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 24px;
+        }
+        
+        #certified h3 .certi{
+            width: 300px;
+            height: 1px;
+            background: #aaa;
+        }
+        #certified .logo1{
+            width: 130px !important;
+            height: 130px !important;
+        }
+        #certified .logo2{
+            margin-top: 30px !important;
+            width: 250px;
+            height: 80px;
+        }
+        #certified .logo3{
+            margin-top: 60px !important;
+            width: 200px;
+            height: 40px;
+        }
+
+/*
+    dropdowns
+*/
+
+    .dropdown-submenu {
+		    position: relative;
+		}
+
+		.dropdown-submenu>.dropdown-menu {
+		    top: 0;
+		    left: 100%;
+		    margin-top: -6px;
+		    margin-left: -1px;
+		    -webkit-border-radius: 0 6px 6px 6px;
+		    -moz-border-radius: 0 6px 6px;
+		    border-radius: 0 6px 6px 6px;
+		}
+
+		.dropdown-submenu:hover>.dropdown-menu {
+		    display: block;
+		}
+
+		/*.dropdown-submenu>a:after {
+		    display: block;
+		    content: " ";
+		    float: right;
+		    width: 0;
+		    height: 0;
+		    border-color: transparent;
+		    border-style: solid;
+		    border-width: 5px 0 5px 5px;
+		    border-left-color: #ccc;
+		    margin-top: 5px;
+		    margin-right: -10px;
+		}
+
+		.dropdown-submenu:hover>a:after {
+		    border-left-color: #fff;
+		}*/
+
+		.dropdown-submenu.pull-left {
+		    float: none;
+		}
+
+		.dropdown-submenu.pull-left>.dropdown-menu {
+		    left: -100%;
+		    margin-left: 10px;
+		    -webkit-border-radius: 6px 0 6px 6px;
+		    -moz-border-radius: 6px 0 6px 6px;
+		    border-radius: 6px 0 6px 6px;
+		}
+        .dropdown-menu{
+            border-radius: 10px !important;
+        }
+        .dropdown-toggle:hover, .dropdown-toggle:focus, .open:hover, .open:focus{
+            background-color: transparent !important;
+        }
+        .dropdown-menu>li>a{
+            padding: 12px;
+        }
+        .dropdown-menu>li>a:hover{
+            background-color: #f2f2f2;
+            color: plum;
+        }
+
+        .ion-chevron-right{
+            font-size: 10px;
+            color: #555;
+            float: right;
+            margin-top: 4px;
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse">
@@ -25,13 +158,56 @@
                 </a>
                 @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("News", "News", "News_Events")</li>
                     <li>@Html.ActionLink("Gallery", "Gallery", "Galleries")</li>
-                    <li>@Html.ActionLink("Products", "Textile", "Products")</li>
+                    
+
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products &nbsp;<span class="ion-chevron-down" style="color: #fff; font-size: 10px; margin-top: 5px;"></span></a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                            <li><a href="#">Textile</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Crops <span class="ion-chevron-right"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Food Beverage</a></li>
+                                    <li><a href="#">Food Items</a></li>
+                                    <li><a href="#">Fruit</a></li>
+                                    <li><a href="#">Rice</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Sports <span class="ion-chevron-right"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Cloths</a></li>
+                                    <li><a href="#">Sport Material</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Electronics <span class="ion-chevron-right"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Auto Mobiles</a></li>
+                                    <li><a href="#">Auto Parts</a></li>
+                                    <li><a href="#">Electronic Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Pharmaceutical <span class="ion-chevron-right"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Alopathic</a></li>
+                                    <li><a href="#">Herbal Medicines</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    @*<li>@Html.ActionLink("Products", "Textile", "Products")</li>*@
                     <li>@Html.ActionLink("Contact", "Index", "Feedbacks")</li>
                     <li class="login-btn">@Html.Partial("_LoginPartial")</li>
                 </ul>
@@ -41,6 +217,28 @@
     </div>
     <div class="">
         @RenderBody()
+
+
+
+
+        <section id="certified">
+            <div class="container">
+                <hr  style="position: absolute"/>
+                <h3><sup>_____________________</sup>&nbsp;&nbsp;&nbsp;Certified by&nbsp;&nbsp;&nbsp;<sup>_____________________</sup></h3>
+                <div class="col-md-4 text-center">
+                    <img src="~/Content/images/fbr.png" class="logo2" />
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="~/Content/images/Service.jpg" class="logo1" />
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="~/Content/images/export.jpg" class="logo3" />
+                </div>
+            </div>
+        </section>
+
+
+
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
@@ -93,5 +291,29 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$(".dropdown-toggle").mouseover(function(){
+			$(".dropdown").addClass("open");
+			$(".dropdown-menu").addClass("animated flipInX");
+
+		});
+		$(".dropdown-menu").mouseleave(function () {
+		    $(".dropdown").removeClass("open");
+		});
+		$(".dropdown-toggle").mouseover(function () {
+		    $(this).css({"background-color":"transparent"});
+		});
+		
+		$('.dropdown-submenu a.test').on("click", function(e){
+		    $(this).next('ul').toggle();
+		    e.stopPropagation();
+		    e.preventDefault();
+		  });
+
+	});
+    </script>
+
+   
 </body>
 </html>
