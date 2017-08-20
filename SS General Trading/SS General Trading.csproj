@@ -294,6 +294,7 @@
     <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\css\bootstrap-dropdownhover.min.css" />
     <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\js\bootstrap-dropdownhover.js" />
     <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\js\bootstrap-dropdownhover.min.js" />
+    <Content Include="Content\submenu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
