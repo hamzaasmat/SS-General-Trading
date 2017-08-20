@@ -120,7 +120,8 @@
 		    -webkit-border-radius: 6px 0 6px 6px;
 		    -moz-border-radius: 6px 0 6px 6px;
 		    border-radius: 6px 0 6px 6px;
-		}
+		}
+
         .dropdown-menu{
             border-radius: 10px !important;
         }
@@ -164,51 +165,46 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("News", "News", "News_Events")</li>
                     <li>@Html.ActionLink("Gallery", "Gallery", "Galleries")</li>
-                    
-
-
+                  
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products &nbsp;<span class="ion-chevron-down" style="color: #fff; font-size: 10px; margin-top: 5px;"></span></a>
                         <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                            <li><a href="#">Textile</a></li>
+                            <li>@Html.ActionLink("Textile", "Textile", "Textile")</li>
                             <li class="dropdown-submenu">
                                 <a tabindex="-1" href="#">Crops <span class="ion-chevron-right"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Food Beverage</a></li>
-                                    <li><a href="#">Food Items</a></li>
-                                    <li><a href="#">Fruit</a></li>
-                                    <li><a href="#">Rice</a></li>
+                                    <li>@Html.ActionLink("Rice", "Rice", "Crops")</li>
+                                    <li>@Html.ActionLink("Fruits", "Fruits", "Crops")</li>
+                                    <li>@Html.ActionLink("Food Items", "FoodItems", "Crops")</li>
+                                    <li>@Html.ActionLink("Food & Beverages", "FoodBeverage", "Crops")</li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a tabindex="-1" href="#">Sports <span class="ion-chevron-right"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Cloths</a></li>
-                                    <li><a href="#">Sport Material</a></li>
+                                    <li>@Html.ActionLink("Clothes", "Clothes", "Sports")</li>
+                                    <li>@Html.ActionLink("Sport Materials", "SportMaterial", "Sports")</li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a tabindex="-1" href="#">Electronics <span class="ion-chevron-right"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Auto Mobiles</a></li>
-                                    <li><a href="#">Auto Parts</a></li>
-                                    <li><a href="#">Electronic Products</a></li>
+                                    <li>@Html.ActionLink("Auto Parts", "AutoParts", "Electronics")</li>
+                                    <li>@Html.ActionLink("Auto Mobiles", "AutoMobiles", "Electronics")</li>
+                                    <li>@Html.ActionLink("Electronic Products", "ElectronicProducts", "Electronics")</li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a tabindex="-1" href="#">Pharmaceutical <span class="ion-chevron-right"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Alopathic</a></li>
-                                    <li><a href="#">Herbal Medicines</a></li>
+                                    <li>@Html.ActionLink("Allopathic", "Allopathic", "Pharmaceutical")</li>
+                                    <li>@Html.ActionLink("Herbal Medicines", "HerbalMedicines", "Pharmaceutical")</li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-
-
-
-                    @*<li>@Html.ActionLink("Products", "Textile", "Products")</li>*@
-                    <li>@Html.ActionLink("Contact", "Index", "Feedbacks")</li>
+                    
+                    <li>@Html.ActionLink("Contact", "Create", "Feedbacks")</li>
                     <li class="login-btn">@Html.Partial("_LoginPartial")</li>
                 </ul>
                 
@@ -252,10 +248,11 @@
                     <div class="col-md-2">
                         <h4>Quick Links</h4>
                         <br />
-                           <a href="">link 1</a><br />
-                           <a href="">link 2</a><br />
-                           <a href="">link 3</a><br />
-                           <a href="">link 4</a><br />
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("News", "News", "News_Events")</li>
+                        <li>@Html.ActionLink("Gallery", "Gallery", "Galleries")</li>
+                        <li>@Html.ActionLink("Contact", "Create", "Feedbacks")</li>
                     </div>
                     <div class="col-md-2">
                         <h4>About</h4>
