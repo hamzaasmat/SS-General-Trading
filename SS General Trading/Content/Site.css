@@ -24,9 +24,10 @@ body{
     width: 100% !important;
     /*height: 700px !important;*/
 }
-.carousel-caption h3 {
-    margin-top: -350px !important;
-    font-size: 80px;
+@media screen and (max-width: 768px){
+    .carousel-caption{
+        bottom: 0px !important;
+    }
 }
 
 .carousel-indicators li{

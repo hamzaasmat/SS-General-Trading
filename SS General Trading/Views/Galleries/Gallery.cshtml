@@ -2,7 +2,10 @@
 @{
     ViewBag.Title = "Gallery";
 }
-
+<link href="~/Content/lightbox/css/lightbox.css" rel="stylesheet" />
+<link href="~/Content/gallery.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Content/lightbox/js/lightbox.js"></script>
 <style>
     .bgimg {
         background-repeat: no-repeat;
@@ -74,3 +77,40 @@
 </section>
 
 
+<section id="images">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="/Content/images/s7.jpg" data-lightbox="gallery">
+                    <div class="img-box">
+                        <img src="~/Content/images/s7.jpg" />
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="/Content/images/s7.jpg" data-lightbox="gallery">
+                    <div class="img-box">
+                        @*<div class="img-box-1"></div>*@
+                        <img src="~/Content/images/about.jpg" />
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="/Content/images/s7.jpg" data-lightbox="gallery">
+                    <div class="img-box">
+                        @*<div class="img-box-1"></div>*@
+                        <img src="~/Content/images/g9.jpg" />
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="/Content/images/s7.jpg" data-lightbox="gallery">
+                    <div class="img-box">
+                        @*<div class="img-box-1"></div>*@
+                        <img src="~/Content/images/g9.jpg" />
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
