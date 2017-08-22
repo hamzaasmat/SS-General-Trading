@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using SS_General_Trading.Models;
+using System.IO;
 
 namespace SS_General_Trading.Controllers
 {
@@ -52,15 +53,37 @@ namespace SS_General_Trading.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Img")] Gallery gallery)
+        public ActionResult Create([Bind(Include = "Id,Name,Img")] Gallery gallery, HttpPostedFileBase file)
         {
             if (ModelState.IsValid)
             {
+                if (file != null)
+                {
+                    if (file.ContentLength > 0)
+                    {
+                        //for checking upload file image or not
+                        if (Path.GetExtension(file.FileName).ToLower() == ".jpg"
+                            || Path.GetExtension(file.FileName).ToLower() == ".png"
+                            || Path.GetExtension(file.FileName).ToLower() == ".gif"
+                            || Path.GetExtension(file.FileName).ToLower() == ".jpeg")
+                        {
+                            var fileName = Path.GetFileName(file.FileName);
+                            gallery.Img = Path.Combine(
+                                Server.MapPath("~/Content/images/"), fileName);
+                            file.SaveAs(gallery.Img);
+                            file.SaveAs(gallery.Img);
+                            gallery.Img = file.FileName;
+                            ViewBag.UploadSuccess = true;
+                        }
+                        else {
+                            ViewBag.UploadFailed = true;
+                        }
+                    }
+                }
                 db.Galleries.Add(gallery);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
             return View(gallery);
         }
 

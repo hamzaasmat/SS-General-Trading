@@ -327,13 +327,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\SSGeneralTrading.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SSGeneralTrading.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\SSGeneralTrading.edmx.diagram">
-      <DependentUpon>SSGeneralTrading.edmx</DependentUpon>
-    </Content>
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
@@ -369,6 +362,13 @@
     <Content Include="Content\font-awesome-4.7.0\scss\_variables.scss" />
     <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\LICENSE" />
     <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\README.md" />
+    <EntityDeploy Include="Models\SSGeneralTrading.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SSGeneralTrading.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\SSGeneralTrading.edmx.diagram">
+      <DependentUpon>SSGeneralTrading.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
