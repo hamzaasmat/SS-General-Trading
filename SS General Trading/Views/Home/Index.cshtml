@@ -2,9 +2,113 @@
     ViewBag.Title = "Home Page";
 }
 
+<style>
+    .carousel-caption {
+    /*margin-top: -350px !important;*/
+    background: rgba(0, 0, 0, .5);
+    padding:20px;
+    height: 400px;
+    bottom: 200px;
+    /*display: block;*/
+}
+.carousel-caption h3{
+    display: block;
+    font-size: 80px;
+    float: left;
+    position: relative;
+    font-family: Josefin Sans;
+    animation-delay: .5s;
+}
+.carousel-caption p{
+    display: block;
+    float: left;
+    position: absolute;
+    margin-top: 150px;
+}
+.item{
+    animation-delay: .40s;
+}
+ /*news box*/
+
+        .news-box{
+            width: 100%;
+            /*border: 1px solid red;*/
+            margin-top: 20px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .news-item{
+            padding: 12px;
+            transition: .30s all;
+            background-color: #f3f3f3;
+        }
+        .news-item:hover{
+            box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+        .news-item h3{
+            text-align: center;
+            font-size: 18px;
+            margin-right: 4px;
+            font-weight: 600;
+            font-family: Open Sans;
+        }
+
+
+
+        .ticker-div{
+ 		width: 430px;
+ 		height: 600px;
+ 		margin-top: 100px;
+ 		overflow: hidden;
+ 		/*border-radius: 20px;*/
+ 		/*background-image: linear-gradient(310deg,#272b53 0,#4f7296 90%);*/
+ 		/*padding: 3px !important;*/
+ 		/*background-color: #f3f3f3;*/
+ 		/*margin: 0px auto;*/
+ 		padding:0px; 
+ 		border: 2px solid #aaa;
+ 		transition: 2s;
+        font-family:Josefin Sans;
+ 		/*box-shadow: 0px 0px 10px #aaa;*/
+ 		/*box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);*/
+ 	}
+ 	.ticker-div:hover{
+ 		background: #f3f3f3;
+ 	}
+ 	.ticker-div ul li{
+ 		list-style-type: none;
+ 		color: #444;
+ 		clear: both;
+ 	}
+ 	.ticker-div ul li h3{
+ 		/*font-size: 30px;*/
+         font-family:Josefin Sans;
+ 	}
+ 	.ticker-div ul{
+ 		margin: 1px;
+ 		padding: 12px 0px 8px 0px; 
+ 	}
+ 	.ticker-div .ticker-header{
+ 		width: 100%;
+ 		height: 40px;
+ 		text-align: center;
+ 		background: #fff;
+ 		padding: 12px;
+ 		font-size: 20px;
+ 		text-transform: uppercase;
+ 		font-weight: 800;
+ 	}
+ 	#news img{
+ 		border-radius: 100%;
+ 		border:3px solid plum;
+ 		padding: 4px;
+        width: 100px; 
+        height: 100px;
+        margin-top: 22px;
+ 	}
+</style>
 
 @* slider start *@
-
 
 <div id="myCarousel" class="carousel slide" data-interval="6500" data-ride="carousel">
     <!-- Carousel indicators -->
@@ -15,15 +119,15 @@
     </ol>
     <!-- Carousel items -->
     <div class="carousel-inner">
-        <div class="active item">
+        <div class="active item animated bounceInDown">
             <img src="~/site-images/slide33.jpg" />
             @*<img src="~/site-images/bgs5.jpeg"/>*@
             <div class="carousel-caption">
-                <h3>First slide label</h3>
+                <h3 class="animated rollIn">SS General Trading</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
-        <div class="item carousel-fade">
+        <div class="item animated fadeInUp">
             <img src="~/site-images/slide22.jpg" />
             @*<img src="~/site-images/bgs4.jpeg"/>*@
             <div class="carousel-caption">
@@ -31,7 +135,7 @@
                 <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
             </div>
         </div>
-        <div class="item carousel-fade">
+        <div class="item animated flipInY">
             <img src="~/site-images/slide11.jpg" />
             @*<img src="~/site-images/bgs3.jpeg"/>*@
             <div class="carousel-caption">
@@ -84,37 +188,149 @@
             we are engaged in export and general trading with partnership of
             valuable manufacturer.
         </p>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="feature-icon"><i class="fa fa-plus-square-o"></i></div>
-                <h3>Pharmaceutical</h3>
-                <p>
-                    Spacial is the perfect solution for web developers and designers. You can get an awesome website for your best projects and clients, and also get great support.
-                </p>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-icon"><i class="fa fa-plus-square-o"></i></div>
+                    <h3>Pharmaceutical</h3>
+                    <p>
+                        Spacial is the perfect solution for web developers and designers. You can get an awesome website for your best projects and clients, and also get great support.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon"><i class="fa fa-map-o"></i></div>
+                    <h3>Herbal</h3>
+                    <p>
+                        Spacial is the perfect solution for web developers and designers. You can get an awesome website for your best projects and clients, and also get great support.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="feature-icon"><i class="fa fa-map-o"></i></div>
-                <h3>Herbal</h3>
-                <p>
-                    Spacial is the perfect solution for web developers and designers. You can get an awesome website for your best projects and clients, and also get great support.
-                </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-icon"><i class="fa fa-futbol-o"></i></div>
+                    <h3>Sports</h3>
+                    <p>
+                        Spacial is the perfect solution for web developers and designers. You can get an awesome website for your best projects and clients, and also get great support.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon"><i class="fa fa-feed"></i></div>
+                    <h3>General Commodities,</h3>
+                    <p>
+                        Spacial is the perfect solution for web developers and designers. You can get an awesome website for your best projects and clients, and also get great support.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="feature-icon"><i class="fa fa-futbol-o"></i></div>
-                <h3>Sports</h3>
-                <p>
-                    Spacial is the perfect solution for web developers and designers. You can get an awesome website for your best projects and clients, and also get great support.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <div class="feature-icon"><i class="fa fa-feed"></i></div>
-                <h3>General Commodities,</h3>
-                <p>
-                    Spacial is the perfect solution for web developers and designers. You can get an awesome website for your best projects and clients, and also get great support.
-                </p>
+        <div class="col-md-4">
+            <div class="ticker-div pull-right">
+                <div class="ticker-header">
+                    Latest News<hr>
+                </div><br />
+                <ul id="news">
+                    <li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/s7.jpg" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Rubi And Rais</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/News.jpg" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Android</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/Service.jpg" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Java <small class="label label-primary animated swing">New</small></h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/export.jpg" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Java <small class="label label-primary animated swing">New</small></h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/fbr.png" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Java <small class="label label-primary animated swing">New</small></h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/ss general.png" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>SS General Trading</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	var interval;
+	function startTicker(){
+		// $("#news li:first").addClass("animated bounceOut");
+		$("#news li:first").slideUp(function(){
+			$(this).appendTo($("#news")).fadeIn().addClass("animated bounceInUp");
+		})
+	}
+
+	function stopTicker(){
+		clearInterval(interval);
+	}
+	$(document).ready(function(){
+		interval = setInterval(startTicker, 3000);
+		$("#news").hover(function(){
+			stopTicker();
+		}, function(){
+			interval = setInterval(startTicker, 3000);
+		});
+
+	});
+
+
+</script>

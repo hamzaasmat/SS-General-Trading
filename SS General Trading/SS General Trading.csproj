@@ -268,6 +268,7 @@
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Content\gallery.css" />
     <Content Include="Content\images\about.jpg" />
     <Content Include="Content\images\customer.jpeg" />
     <Content Include="Content\images\export.jpg" />
@@ -294,6 +295,15 @@
     <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\css\bootstrap-dropdownhover.min.css" />
     <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\js\bootstrap-dropdownhover.js" />
     <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\js\bootstrap-dropdownhover.min.js" />
+    <Content Include="Content\lightbox\css\lightbox.css" />
+    <Content Include="Content\lightbox\images\close.png" />
+    <Content Include="Content\lightbox\images\loading.gif" />
+    <Content Include="Content\lightbox\images\next.png" />
+    <Content Include="Content\lightbox\images\prev.png" />
+    <Content Include="Content\lightbox\js\lightbox.js" />
+    <Content Include="Content\products\artsfon.com-79518.jpg" />
+    <Content Include="Content\products\Raisins-Health-Benefits.jpg" />
+    <Content Include="Content\products\rice.jpg" />
     <Content Include="Content\submenu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
