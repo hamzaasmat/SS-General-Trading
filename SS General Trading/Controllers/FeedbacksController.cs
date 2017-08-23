@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using SS_General_Trading.Models;
+using System.Net.Mail;
+using System.Text;
 
 namespace SS_General_Trading.Controllers
 {
@@ -129,5 +131,36 @@ namespace SS_General_Trading.Controllers
             }
             base.Dispose(disposing);
         }
-    }
+
+        public JsonResult SendMailToUser() {
+            bool result = false;
+            result = SendEmail("nabia.saroosh@gmail.com", "Test", "<p>Hi Nabia,<br/>This message is for testing purpose. So don't be upset.<br/>Kind Regards,<br/>Nabia Saroosh</p>");
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+        public bool SendEmail(string toEmail, string subject, string emailBody) {
+            try
+            {
+                string senderEmail = System.Configuration.ConfigurationManager.AppSettings["SenderEmail"].ToString();
+                string senderPassword = System.Configuration.ConfigurationManager.AppSettings["SenderPassword"].ToString();
+
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.EnableSsl = true;
+                client.Timeout = 100000;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new NetworkCredential(senderEmail, senderPassword);
+
+                MailMessage mailMessage = new MailMessage(senderEmail, toEmail, subject, emailBody);
+                mailMessage.IsBodyHtml = true;
+                mailMessage.BodyEncoding = UTF8Encoding.UTF8;
+
+                client.Send(mailMessage);
+
+                return true;
+            }
+            catch (Exception ex) {
+                return false;
+            }
+
+        }}
 }
