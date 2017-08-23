@@ -453,6 +453,7 @@
     <Content Include="Views\Pharmaceutical\HerbalMedicines.cshtml" />
     <Content Include="Views\Admin\Admin.cshtml" />
     <Content Include="Views\Shared\_Layout - Admin.cshtml" />
+    <Content Include="Views\Shared\_Sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
