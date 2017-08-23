@@ -4,7 +4,12 @@
 }
 
 <link href="~/Content/submenu.css" rel="stylesheet" />
-
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#hamzaasmat").load('Views/Shared/HtmlPage1.html');
+    })
+</script>
 <div class="top-sub">
     <h1>Rice</h1>
 </div>
@@ -67,8 +72,9 @@
             </div>
         </div>
         <div class="col-md-4 col-sm-4">
-            <iframe src="/Views/Home/sidebar.cshtml">
-            </iframe>
+            <div id="hamzaasmat">
+
+            </div>
         </div>
     </div>
 </section>
