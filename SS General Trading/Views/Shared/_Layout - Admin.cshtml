@@ -4,12 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
+    @*@Styles.Render("~/Content/css")*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/admin.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="sidebar-wrapper" id="sidebar-wrapper">
+        <ul class="sidebar-menu">
+            <li class="sidbar-head"><i class="fa fa-tachometer"></i> &nbsp;&nbsp;Dashboard</li>
+            <li><a href="/News_Events"><i class="fa fa-newspaper-o"></i> &nbsp;&nbsp;News</a></li>
+            <li><a href="/Galleries"><i class="fa fa-camera-retro"></i> &nbsp;&nbsp;Gallery</a></li>
+        </ul>
+    </div>
+
+
+
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,17 +43,44 @@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    </div>*@
+
+    
+    
+    <div class="topBar">
+        <a href="#" id="hit-sidebar"><span class="glyphicon glyphicon-align-justify"></span></a>
+        <a href="#">SS General Trading</a>
+        <a href="/Account/Login" id="loginLink" class="pull-right">Log in</a>
+        @*@Html.Partial("_LoginPartial")*@
     </div>
 
+    <div class="content-wrapper">
+        @RenderBody()
+    </div>
+            
+        
+
+
+    @*<hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>*@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            $("#hit-sidebar").click(function () {
+                $(".content-wrapper").toggleClass("content-op");
+                $("#sidebar-wrapper").toggleClass("sidebar-menu-open");
+                $("body").toggleClass("content-open");
+            });
+            $(".content-wrapper").click(function () {
+                $(".content-wrapper").removeClass("content-op");
+                $("#sidebar-wrapper").removeClass("sidebar-menu-open");
+                $("body").removeClass("content-open");
+            })
+        });
+    </script>
 </body>
 </html>
