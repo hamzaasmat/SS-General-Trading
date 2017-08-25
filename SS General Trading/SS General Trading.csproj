@@ -304,6 +304,7 @@
     <Content Include="Content\products\artsfon.com-79518.jpg" />
     <Content Include="Content\products\Raisins-Health-Benefits.jpg" />
     <Content Include="Content\products\rice.jpg" />
+    <Content Include="Content\sidebar.css" />
     <Content Include="Content\submenu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

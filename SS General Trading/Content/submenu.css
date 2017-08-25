@@ -13,8 +13,9 @@
     font-family: Josefin Sans;
 }
 #single-product{
-    margin: 100px auto;
+    margin: 100px auto !important;
 }
+
 .affix{
     top: 100px;
 }
