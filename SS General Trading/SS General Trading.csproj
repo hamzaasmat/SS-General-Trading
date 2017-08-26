@@ -283,11 +283,11 @@
     <Content Include="Content\images\g7.jpg" />
     <Content Include="Content\images\g8.jpg" />
     <Content Include="Content\images\g9.jpg" />
-    <Content Include="Content\images\Logo.png" />
     <Content Include="Content\images\News.jpg" />
     <Content Include="Content\images\s7.jpg" />
     <Content Include="Content\images\ser.jpg" />
     <Content Include="Content\images\Service.jpg" />
+    <Content Include="Content\images\ss general trading logo.png" />
     <Content Include="Content\images\ss general.png" />
     <Content Include="Content\images\stat.jpg" />
     <Content Include="Content\kybarg-bootstrap-dropdown-hover-c6ab463\css\animate.css" />
