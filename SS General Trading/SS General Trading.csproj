@@ -258,9 +258,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\aspnet-SS General Trading-20170814110254.mdf" />
-    <Content Include="App_Data\aspnet-SS General Trading-20170814110254_log.ldf">
-      <DependentUpon>aspnet-SS General Trading-20170814110254.mdf</DependentUpon>
+    <Content Include="App_Data\aspnet-SS General Trading-20170717020240.mdf" />
+    <Content Include="App_Data\aspnet-SS General Trading-20170717020240_log.ldf">
+      <DependentUpon>aspnet-SS General Trading-20170717020240.mdf</DependentUpon>
     </Content>
     <Content Include="Content\admin.css" />
     <Content Include="Content\bootstrap.css" />
