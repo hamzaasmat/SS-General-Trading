@@ -1,11 +1,19 @@
 ﻿
 @{
-    Layout = "~/Views/Shared/_Sidebar.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Rice";
 }
 
 <link href="~/Content/submenu.css" rel="stylesheet" />
-
+<link href="~/Content/sidebar.css" rel="stylesheet" />
+<style>
+    #single-product p{
+    line-height: 30px;
+}
+#single-product .row{
+    margin: 30px auto !important;
+}
+</style>
 <div class="top-sub">
     <h1>Rice</h1>
 </div>
@@ -17,59 +25,61 @@
             <img src="~/Content/products/rice.jpg" class="img-responsive img-thumbnail" />
             <div class="row">
                 <p>
-                    <strong>SS General Trading</strong>
-                    has been able to grow further since its establishment and the
-                    leader in export and import of pharmaceutical, herbal medicines, auto mobiles, electronics,
-                    textile and agriculture commodities with collaboration of our valuable top manufacturer of
-                    Pakistan.
+                    <span class="text-success"><strong>SS General Trading</strong></span> is a leading suppliers and exporters of the finest quality basmati, non-basmati Long grain rice of multiple origins. We trade, 
+                    broker and export of all of the main types of rice from Pakistan, India, Thailand and Vietnam. 
+                    We do contract delivery of virtually all kinds of rice under FOB, CIF from all major exporting countries in all major ports of the country. 
+                    Supply conditions are specified after receipt of a specific request to our address. For those who want to buy rice on a contract basis, 
+                    we can also offer ship goods from parties that are in the way.
                 </p>
+                <h3><span class="text-success">Types of rice</span>, with whom we work constantly:</h3>
                 <p>
-                    <strong>SS General Trading</strong>
-                    has been able to grow further since its establishment and the
-                    leader in export and import of pharmaceutical, herbal medicines, auto mobiles, electronics,
-                    textile and agriculture commodities with collaboration of our valuable top manufacturer of
-                    Pakistan.
+                    White long grain from higher grades (Thai 100%) to relatively cheap but quality rice from Vietnam (5% and 10% broken grains) double polishing, as well as Pakistani long grain rice of white and parboiled verities i.e. IRRI6, IRRI9 and Basmati Long grain rice of different broken percentage of double-and single-polishing as per our customers requirement.
                 </p>
+                <h3 class="text-success">Basmati Rice</h3>
                 <p>
-                    <strong>SS General Trading</strong>
-                    has been able to grow further since its establishment and the
-                    leader in export and import of pharmaceutical, herbal medicines, auto mobiles, electronics,
-                    textile and agriculture commodities with collaboration of our valuable top manufacturer of
-                    Pakistan.
-                </p>
-                <p>
-                    <strong>SS General Trading</strong>
-                    has been able to grow further since its establishment and the
-                    leader in export and import of pharmaceutical, herbal medicines, auto mobiles, electronics,
-                    textile and agriculture commodities with collaboration of our valuable top manufacturer of
-                    Pakistan.
-                </p>
-                <p>
-                    <strong>SS General Trading</strong>
-                    has been able to grow further since its establishment and the
-                    leader in export and import of pharmaceutical, herbal medicines, auto mobiles, electronics,
-                    textile and agriculture commodities with collaboration of our valuable top manufacturer of
-                    Pakistan.
-                </p>
-                <p>
-                    <strong>SS General Trading</strong>
-                    has been able to grow further since its establishment and the
-                    leader in export and import of pharmaceutical, herbal medicines, auto mobiles, electronics,
-                    textile and agriculture commodities with collaboration of our valuable top manufacturer of
-                    Pakistan.
-                </p>
-                <p>
-                    <strong>SS General Trading</strong>
-                    has been able to grow further since its establishment and the
-                    leader in export and import of pharmaceutical, herbal medicines, auto mobiles, electronics,
-                    textile and agriculture commodities with collaboration of our valuable top manufacturer of
-                    Pakistan.
+                    Basmati is long grain variety of rice which is traditionally from Pakistan and India. The basmati rice in Pakistan is cultivated in the Punjab and the production is estimated around 2.47 million tons, while in India the states of Jammu & Kashmir, Punjab, Delhi, Uttarpardesh, himanchal pardesh and uttarkhand cultivate rice and the estimated production is 6.5 million Tons. Also in India the state of Haryana is producing more than 60% of the total basmati rice.
                 </p>
             </div>
         </div>
-        <div class="col-md-4 col-sm-4">
-            <iframe src="/Views/Home/sidebar.cshtml">
-            </iframe>
+        <div class="col-md-4 col-sm-8 sidebar">
+            <div class="endLine"></div>
+            <div class="row">
+                <h3>Search Product</h3>
+                <div class="input-group has-feedback">
+                    <input type="search" class="form-control" />
+                    <span class="input-group-addon form-control-feedback"><span class="glyphicon glyphicon-search"></span></span>
+                </div>
+            </div>
+            <div class="endLine"></div>
+            <h3>Product Categories</h3>
+            <div class="endLine"></div>
+            <div class="row">
+                <h4 class="">Crops</h4>
+                <a href="~/Views/Crops/FoodBeverage.cshtml">Food Beverage</a>
+                <a href="~/Views/Crops/FoodItems.cshtml">Food Items</a>
+                <a href="~/Views/Crops/Fruits.cshtml">Fruit</a>
+                <a href="~/Views/Crops/Rice.cshtml">Rice</a>
+            </div>
+            <div class="endLine"></div>
+            <div class="row">
+                <h4 class="">Electronics</h4>
+                <a href="~/Views/Electronics/ElectronicProducts.cshtml">Electronic Products</a>
+                <a href="~/Views/Electronics/AutoMobiles.cshtml">Auto Mobiles</a>
+                <a href="~/Views/Electronics/AutoParts.cshtml">Auto Parts</a>
+            </div>
+            <div class="endLine"></div>
+            <div class="row">
+                <h4 class="">Pharmaceutical</h4>
+                <a href="~/Views/Pharmaceutical/Allopathic.cshtml">Allopathic Medicines</a>
+                <a href="~/Views/Pharmaceutical/HerbalMedicines.cshtml">Herbal Medicines</a>
+            </div>
+            <div class="endLine"></div>
+            <div class="row">
+                <h4 class="">Sports</h4>
+                <a href="~/Views/Sports/SportMaterial.cshtml">Sport Material</a>
+                <a href="~/Views/Sports/Clothes.cshtml">Clothes</a>
+            </div>
         </div>
+  
     </div>
 </section>

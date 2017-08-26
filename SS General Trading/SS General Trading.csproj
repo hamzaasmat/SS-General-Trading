@@ -262,6 +262,7 @@
     <Content Include="App_Data\aspnet-SS General Trading-20170814110254_log.ldf">
       <DependentUpon>aspnet-SS General Trading-20170814110254.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\admin.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.css" />
@@ -304,6 +305,7 @@
     <Content Include="Content\products\artsfon.com-79518.jpg" />
     <Content Include="Content\products\Raisins-Health-Benefits.jpg" />
     <Content Include="Content\products\rice.jpg" />
+    <Content Include="Content\sidebar.css" />
     <Content Include="Content\submenu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -387,6 +389,7 @@
     <Content Include="site-images\slide11.jpg" />
     <Content Include="site-images\slide22.jpg" />
     <Content Include="site-images\slide33.jpg" />
+    <Content Include="Views\Shared\HtmlPage1.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
