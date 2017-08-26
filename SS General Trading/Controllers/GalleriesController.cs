@@ -24,7 +24,7 @@ namespace SS_General_Trading.Controllers
         // GET: Gallery
         public ActionResult Gallery()
         {
-            return View();
+            return View(db.Galleries.ToList());
         }
 
         // GET: Galleries/Details/5
