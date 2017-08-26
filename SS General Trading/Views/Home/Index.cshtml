@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<SS_General_Trading.Models.News_Events>
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -203,17 +204,19 @@
                 </div><br />
                 <ul id="news">
                     <li>
-                        <div class="col-md-3">
-                            <img src="~/Content/images/s7.jpg" />
-                        </div>
-                        <div class="col-md-9">
-                            <h3>Rubi And Rais</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis
+                        @*<div class="col-md-3">
+                    <img src="~/Content/images/s7.jpg" />
+                </div>*@
+                        <div class="col-md-12">
+                            @foreach (var news_events in Model)
+                            {
+                                <h3>@Html.DisplayFor(modelItem => news_events.Name)</h3>
+                                @Html.DisplayFor(modelItem => news_events.Address)
+                                <br/><br/>
+                            }
                         </div>
                     </li>
-                    <li>
+                    @*<li>
                         <div class="col-md-3">
                             <img src="~/Content/images/News.jpg" />
                         </div>
@@ -267,7 +270,7 @@
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis
                         </div>
-                    </li>
+                    </li>*@
                 </ul>
             </div>
         </div>

@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<SS_General_Trading.Models.Gallery>
 @{
     ViewBag.Title = "Gallery";
 }
@@ -80,17 +80,22 @@
 <section id="images">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            @foreach (var gallery in Model)
+            {
+                <div class="col-md-3">
+                    <a href="~/Content/images/@gallery.Img" data-lightbox="gallery">
+                        <div class="img-box">
+                            <img src="~/Content/images/@gallery.Img" />
+                        </div>
+                    </a>
+                </div>
+                
+            }
+            
+            @*<div class="col-md-3">
                 <a href="/Content/images/s7.jpg" data-lightbox="gallery">
                     <div class="img-box">
-                        <img src="~/Content/images/s7.jpg" />
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="/Content/images/s7.jpg" data-lightbox="gallery">
-                    <div class="img-box">
-                        @*<div class="img-box-1"></div>*@
+                        <div class="img-box-1"></div>
                         <img src="~/Content/images/about.jpg" />
                     </div>
                 </a>
@@ -98,7 +103,7 @@
             <div class="col-md-3">
                 <a href="/Content/images/s7.jpg" data-lightbox="gallery">
                     <div class="img-box">
-                        @*<div class="img-box-1"></div>*@
+                        <div class="img-box-1"></div>
                         <img src="~/Content/images/g9.jpg" />
                     </div>
                 </a>
@@ -106,11 +111,11 @@
             <div class="col-md-3">
                 <a href="/Content/images/s7.jpg" data-lightbox="gallery">
                     <div class="img-box">
-                        @*<div class="img-box-1"></div>*@
+                        <div class="img-box-1"></div>
                         <img src="~/Content/images/g9.jpg" />
                     </div>
                 </a>
-            </div>
+            </div>*@
         </div>
     </div>
 </section>

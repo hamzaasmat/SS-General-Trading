@@ -17,7 +17,6 @@ namespace SS_General_Trading.Models
     {
         public int Id { get; set; }
 
-        
         public string Img { get; set; }
     }
 }
