@@ -15,13 +15,33 @@
 #single-product{
     margin: 100px auto !important;
 }
+#single-product img{
+    transition: .6s all;
+    transform: scale(1) rotate(0deg);
+    width: 100%;
+}
+#single-product img:hover{
+    transform: scale(2) rotate(20deg);
+}
+#single-product h4{
+    font-size: 50px !important;
+    font-family: Open Sans;
 
-.affix{
-    top: 100px;
 }
-.affix + .side-bar{
-    padding-top: 70px;
+.nav-tabs{
+    padding:20px 0px 20px 0px;
+    border: 0px;
 }
-.side-bar{
-    border-left: 1px solid plum;
+.nav-tabs>li>a{
+    font-size:15px;
+    color: #aaa;
+}
+.nav-tabs>li>a:hover{
+    background-color: transparent !important;
+    border: 1px solid transparent;
+}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{
+    border: 1px solid #aaa;
+    border-radius:50px;
+    color: #aaa;
 }
