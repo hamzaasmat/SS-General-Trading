@@ -202,6 +202,7 @@
     <Compile Include="Controllers\CropsController.cs" />
     <Compile Include="Controllers\ElectronicsController.cs" />
     <Compile Include="Controllers\FeedbacksController.cs" />
+    <Compile Include="Controllers\FoodBeverageController.cs" />
     <Compile Include="Controllers\GalleriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -459,6 +460,7 @@
     <Content Include="Views\Admin\Admin.cshtml" />
     <Content Include="Views\Shared\_Layout - Admin.cshtml" />
     <Content Include="Views\Shared\_Sidebar.cshtml" />
+    <Content Include="Views\FoodBeverage\FoodBeverage.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
