@@ -286,7 +286,9 @@
     <Content Include="Content\images\g7.jpg" />
     <Content Include="Content\images\g8.jpg" />
     <Content Include="Content\images\g9.jpg" />
+    <Content Include="Content\images\hand.jpg" />
     <Content Include="Content\images\News.jpg" />
+    <Content Include="Content\images\pexels-photo-164531.jpeg" />
     <Content Include="Content\images\s7.jpg" />
     <Content Include="Content\images\ser.jpg" />
     <Content Include="Content\images\Service.jpg" />
