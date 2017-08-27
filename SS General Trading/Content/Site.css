@@ -75,9 +75,9 @@ body{
     color: #aaa;
 }
 .navbar-inverse .navbar-brand img{
-    margin-top: -45px;
-    width: 125px !important;
-    height: 120px !important;
+    margin-top: -35px;
+    width: 80px !important;
+    height: 80px !important;
     position: absolute;
 }
 

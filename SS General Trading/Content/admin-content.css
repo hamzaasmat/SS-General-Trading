@@ -1,0 +1,59 @@
+﻿body{
+    background: #f4f4f4;
+    font-family: Open Sans;
+}
+.box{
+    width: 100%;
+    padding: 20px;
+    border-top: 5px solid plum;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.btn-edit{
+    background: plum;
+    color: #fff;
+    padding: 15px;
+}
+.table tr th{
+    font-size: 20px;
+}
+.table tr td{
+    padding: 20px !important;
+}
+label{
+    color: #666;
+}
+[type="file"] {
+/* Style the color of the message that says 'No file chosen' */
+  color: #878787;
+  border: 2px solid #df405a;
+}
+[type="file"]::-webkit-file-upload-button {
+  background: #df405a;
+  border: 2px solid #df405a;
+  border-radius: 0px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  outline: none;
+  font-weight:600;
+  padding:15px 15px 15px 40px;
+  /*padding: 10px 25px;*/
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+[type="file"]:before{
+    font-family: 'FontAwesome';
+    content: '\f0ee';
+    color:#fff;
+    padding-top:3px;
+    padding-left:4px;
+    position: absolute;
+    background: transparent;
+    font-size: 30px;
+    z-index:999;
+}
+[type="file"]::-webkit-file-upload-button:hover {
+  opacity: .7;
+}

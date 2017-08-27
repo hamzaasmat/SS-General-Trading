@@ -10,7 +10,8 @@ body{
     position: relative;
     left: 0;
     transition: .3s;
-    overflow-x: hidden
+    overflow-x: hidden;
+    background: #f3f3f3;
 }
 .sidebar-menu-open{
     left:0;
@@ -78,3 +79,5 @@ body{
     text-decoration: none;
     font-weight: 100;
 }
+
+

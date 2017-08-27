@@ -262,6 +262,8 @@
     <Content Include="App_Data\aspnet-SS General Trading-20170717020240_log.ldf">
       <DependentUpon>aspnet-SS General Trading-20170717020240.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\admin-content.css" />
+    <Content Include="Content\admin-js.js" />
     <Content Include="Content\admin.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
