@@ -74,12 +74,7 @@ body{
 .navbar-inverse .navbar-brand:hover{
     color: #aaa;
 }
-.navbar-inverse .navbar-brand img{
-    margin-top: -35px;
-    width: 80px !important;
-    height: 80px !important;
-    position: absolute;
-}
+
 
 .login-btn{
     border: 1px solid #fff;
