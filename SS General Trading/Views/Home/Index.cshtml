@@ -8,58 +8,6 @@
 .item{
     animation-delay: .40s;
 }
- /*news box*/
-        .ticker-div{
- 		width: 430px;
- 		height: 600px;
- 		margin-top: 100px;
- 		overflow: hidden;
- 		/*border-radius: 20px;*/
- 		/*background-image: linear-gradient(310deg,#272b53 0,#4f7296 90%);*/
- 		/*padding: 3px !important;*/
- 		/*background-color: #f3f3f3;*/
- 		/*margin: 0px auto;*/
- 		padding:0px; 
- 		border: 2px solid #ddd;
- 		transition: 2s;
-        font-family:Josefin Sans;
- 		/*box-shadow: 0px 0px 10px #aaa;*/
- 		/*box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);*/
- 	}
- 	.ticker-div:hover{
- 		background: #f3f3f3;
- 	}
- 	.ticker-div ul li{
- 		list-style-type: none;
- 		color: #444;
- 		clear: both;
- 	}
- 	.ticker-div ul li h3{
- 		/*font-size: 30px;*/
-         font-family:Josefin Sans;
- 	}
- 	.ticker-div ul{
- 		margin: 1px;
- 		padding: 12px 0px 8px 0px; 
- 	}
- 	.ticker-div .ticker-header{
- 		width: 100%;
- 		height: 40px;
- 		text-align: center;
- 		background: #fff;
- 		padding: 12px;
- 		font-size: 20px;
- 		text-transform: uppercase;
- 		font-weight: 800;
- 	}
- 	#news img{
- 		border-radius: 100%;
- 		border:3px solid plum;
- 		padding: 4px;
-        width: 100px; 
-        height: 100px;
-        margin-top: 22px;
- 	}
 </style>
 
 @* slider start *@
@@ -179,85 +127,92 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="ticker-div pull-right">
-                <div class="ticker-header">
-                    Latest News<hr>
-                </div><br />
-                <ul id="news">
-                @foreach (var news_events in Model)
-                {
-                    <li>
-                        @*<div class="col-md-3">
-                                <img src="~/Content/images/s7.jpg" />
-                            </div>*@
-                        <div class="col-md-12">
-                           
-                                <h3>@Html.DisplayFor(modelItem => news_events.Name)</h3>
-                                @Html.DisplayFor(modelItem => news_events.Address)
-                                <br /><br />
-                            
-                        </div>
-                    </li>
-                }
-                    
-                   
-                    @*<li>
-        <div class="col-md-3">
-            <img src="~/Content/images/Service.jpg" />
-        </div>
-        <div class="col-md-9">
-            <h3>Java <small class="label label-primary animated swing">New</small></h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis
-        </div>
-    </li>
-    <li>
-        <div class="col-md-3">
-            <img src="~/Content/images/export.jpg" />
-        </div>
-        <div class="col-md-9">
-            <h3>Java <small class="label label-primary animated swing">New</small></h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis
-        </div>
-    </li>
-    <li>
-        <div class="col-md-3">
-            <img src="~/Content/images/fbr.png" />
-        </div>
-        <div class="col-md-9">
-            <h3>Java <small class="label label-primary animated swing">New</small></h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis
-        </div>
-    </li>
-    <li>
-        <div class="col-md-3">
-            <img src="~/Content/images/ss general.png" />
-        </div>
-        <div class="col-md-9">
-            <h3>SS General Trading</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis
-        </div>
-    </li>*@
-                </ul>
-            </div>
-        </div>
+        
     </div>
 </section>
 
 
 
 
+<section id="bg">
+    <div class="container">
+        <div class="col-md-8">
+
+        </div>
+        <div class="col-md-4">
+            <div class="ticker-div pull-right">
+                <div class="ticker-header">
+                    <h3>Latest News</h3>
+                </div><br />
+                <ul id="news">
+                    @foreach (var news_events in Model)
+                    {
+                        <li>
+                            @*<div class="col-md-3">
+                                <img src="~/Content/images/s7.jpg" />
+                            </div>*@
+                            <div class="col-md-12">
+
+                                <h3>@Html.DisplayFor(modelItem => news_events.Name)</h3>
+                                @Html.DisplayFor(modelItem => news_events.Address)
+                                <br /><br />
+
+                            </div>
+                        </li>
+                    }
 
 
+                    @*<li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/Service.jpg" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Java <small class="label label-primary animated swing">New</small></h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/export.jpg" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Java <small class="label label-primary animated swing">New</small></h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/fbr.png" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Java <small class="label label-primary animated swing">New</small></h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-3">
+                            <img src="~/Content/images/ss general.png" />
+                        </div>
+                        <div class="col-md-9">
+                            <h3>SS General Trading</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                        </div>
+                    </li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
+<br /><br /><br /><br /><br /><br /><br /><br />
 
 
 
