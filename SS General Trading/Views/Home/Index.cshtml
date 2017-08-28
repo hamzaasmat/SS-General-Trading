@@ -185,74 +185,67 @@
                     Latest News<hr>
                 </div><br />
                 <ul id="news">
+                @foreach (var news_events in Model)
+                {
                     <li>
                         @*<div class="col-md-3">
-                    <img src="~/Content/images/s7.jpg" />
-                </div>*@
+                                <img src="~/Content/images/s7.jpg" />
+                            </div>*@
                         <div class="col-md-12">
-                            @foreach (var news_events in Model)
-                            {
+                           
                                 <h3>@Html.DisplayFor(modelItem => news_events.Name)</h3>
                                 @Html.DisplayFor(modelItem => news_events.Address)
-                                <br/><br/>
-                            }
+                                <br /><br />
+                            
                         </div>
                     </li>
+                }
+                    
+                   
                     @*<li>
-                        <div class="col-md-3">
-                            <img src="~/Content/images/News.jpg" />
-                        </div>
-                        <div class="col-md-9">
-                            <h3>Android</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis
-                        </div>
-                    </li>
-                    <li>
-                        <div class="col-md-3">
-                            <img src="~/Content/images/Service.jpg" />
-                        </div>
-                        <div class="col-md-9">
-                            <h3>Java <small class="label label-primary animated swing">New</small></h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis
-                        </div>
-                    </li>
-                    <li>
-                        <div class="col-md-3">
-                            <img src="~/Content/images/export.jpg" />
-                        </div>
-                        <div class="col-md-9">
-                            <h3>Java <small class="label label-primary animated swing">New</small></h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis
-                        </div>
-                    </li>
-                    <li>
-                        <div class="col-md-3">
-                            <img src="~/Content/images/fbr.png" />
-                        </div>
-                        <div class="col-md-9">
-                            <h3>Java <small class="label label-primary animated swing">New</small></h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis
-                        </div>
-                    </li>
-                    <li>
-                        <div class="col-md-3">
-                            <img src="~/Content/images/ss general.png" />
-                        </div>
-                        <div class="col-md-9">
-                            <h3>SS General Trading</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis
-                        </div>
-                    </li>*@
+        <div class="col-md-3">
+            <img src="~/Content/images/Service.jpg" />
+        </div>
+        <div class="col-md-9">
+            <h3>Java <small class="label label-primary animated swing">New</small></h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis
+        </div>
+    </li>
+    <li>
+        <div class="col-md-3">
+            <img src="~/Content/images/export.jpg" />
+        </div>
+        <div class="col-md-9">
+            <h3>Java <small class="label label-primary animated swing">New</small></h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis
+        </div>
+    </li>
+    <li>
+        <div class="col-md-3">
+            <img src="~/Content/images/fbr.png" />
+        </div>
+        <div class="col-md-9">
+            <h3>Java <small class="label label-primary animated swing">New</small></h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis
+        </div>
+    </li>
+    <li>
+        <div class="col-md-3">
+            <img src="~/Content/images/ss general.png" />
+        </div>
+        <div class="col-md-9">
+            <h3>SS General Trading</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis
+        </div>
+    </li>*@
                 </ul>
             </div>
         </div>

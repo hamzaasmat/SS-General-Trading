@@ -58,12 +58,16 @@ namespace SS_General_Trading.Controllers
         {
             if (ModelState.IsValid)
             {
+                bool result = false;
                 db.Feedbacks.Add(feedback);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                result = SendEmail("nabia.saroosh@gmail.com", "Feedback", "<p>Hi Admin,<br/>My name is "+ feedback.Name + ". <br/> E_mail ID: " + feedback.Email + "<br/><br/>" + feedback.Comments + "<br/>Kind Regards,<br/>" + feedback.Name + "</p>");
+                ModelState.Clear();
+                return View("Create");
+                
             }
-
             return View(feedback);
+            
         }
 
         // GET: Feedbacks/Edit/5
@@ -132,11 +136,10 @@ namespace SS_General_Trading.Controllers
             base.Dispose(disposing);
         }
 
-        public JsonResult SendMailToUser() {
-            bool result = false;
-            result = SendEmail("nabia.saroosh@gmail.com", "Test", "<p>Hi Nabia,<br/>This message is for testing purpose. So don't be upset.<br/>Kind Regards,<br/>Nabia Saroosh</p>");
-            return Json(result, JsonRequestBehavior.AllowGet);
-        }
+        //public JsonResult SendMailToUser() {
+            
+        //     return Json(result, JsonRequestBehavior.AllowGet);
+        //}
         public bool SendEmail(string toEmail, string subject, string emailBody) {
             try
             {
@@ -163,4 +166,6 @@ namespace SS_General_Trading.Controllers
             }
 
         }}
+
 }
+
