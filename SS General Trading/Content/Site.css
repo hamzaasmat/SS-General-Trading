@@ -18,11 +18,14 @@ body{
     #myCarousel{
         margin-top: -20px !important;
     }
+    .carousel-caption{
+        display: none;
+    }
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
     width: 100% !important;
-    /*height: 700px !important;*/
+    /*height: 400px !important;*/
 }
 @media screen and (max-width: 768px){
     .carousel-caption{
@@ -196,6 +199,7 @@ body{
         height: 85px !important;
         margin-top: -30px;
     }
+    
 }
 
 
@@ -256,6 +260,7 @@ body{
 
 #introduction{
     margin-top: 60px;
+    padding-top: 630px;   
 }
 #introduction h1{
     color: #555;
@@ -272,7 +277,11 @@ body{
     letter-spacing: 3px;
     margin-bottom: 40px;
 }
-
+@media screen and (max-width: 768px){
+    #introduction{
+        padding-top: 220px;
+    }
+}
 /*
     --------------------
       product Section
@@ -442,7 +451,14 @@ body{
  		    box-shadow: 0 5px 16px rgba(76,84,109,.4);
     padding: 60px 70px;
  	}
- 	
+    @media screen and (max-width: 768px){
+        .ticker-div{
+            width: 100%;
+            clear: both !important;
+            margin-left: 30px !important;
+            position: relative;
+        }
+    } 	
  	.ticker-div ul li{
  		list-style-type: none;
  		color: #444;
@@ -480,3 +496,64 @@ body{
         height: 100px;
         margin-top: 22px;
  	}
+
+
+     #sec-1, #sec-2{
+         position: relative;
+         display: table;
+         width: 50%;
+         height: 535px;
+         border: 1px solid #E2E9F0;
+         /*border-bottom: 1px solid #999;*/
+         margin-top: 50px auto;
+         /*margin-bottom: 100px;*/
+         padding: 50px 50px 50px 50px;
+     }
+     #sec-1 h3{
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #444;
+        letter-spacing: 1px;
+     }
+     #sec-1{
+         float: left;
+         background: #f5f7f9;
+     }
+     #sec-1 p{
+         line-height: 25px;
+         font-size: 13px;
+         color: #7B8398;
+         font-family: Open Sans
+     }
+     #sec-2 p{
+         line-height: 25px;
+         font-size: 15px;
+         color: #7B8398;
+         font-family: Open Sans
+     }
+     #sec-1 i{
+         font-size: 40px;
+         color: #54AFE5;
+         margin-top: 10px;
+     }
+     #sec-2{
+         background: #fff;
+     }
+     #sec-2 h3{
+         font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #444;
+        letter-spacing: 1px;
+     }
+     #sec-2 h5{
+         font-size:12px;
+         color: #70a9cd;
+         text-transform: uppercase;
+     }
+     @media screen and (max-width: 768px){
+         #sec-1, #sec-2{
+             width: 100%;
+         }
+     }

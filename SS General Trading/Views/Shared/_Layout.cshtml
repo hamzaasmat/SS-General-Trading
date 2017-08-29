@@ -149,6 +149,15 @@
     height: 80px !important;
     position: absolute;
 }
+       .navbar-nav li:last-child a{
+            border: 1px solid #fff !important;
+            border-radius: 25px;
+            text-transform: uppercase;
+        }
+       .navbar-nav li:last-child a:hover{
+           background: #fff;
+           color: #555;
+       }
     </style>
 </head>
 <body>
@@ -212,7 +221,7 @@
                     </li>
                     
                     <li>@Html.ActionLink("Contact", "Create", "Feedbacks")</li>
-                    <li>@Html.Partial("_LoginPartial")</li>
+                    <li>@Html.Partial("_LoginPartial", new {@class = "login" })</li>
                 </ul>
                 @*@Html.Partial("_LoginPartial")*@
             </div>
