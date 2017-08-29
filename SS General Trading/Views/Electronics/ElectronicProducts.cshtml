@@ -6,7 +6,7 @@
 <link href="~/Content/submenu.css" rel="stylesheet" />
 <link href="~/Content/sidebar.css" rel="stylesheet" />
 <div class="top-sub">
-    <h1>Electroni Products</h1>
+    <h1>Electronic Products</h1>
 </div>
 
 
@@ -25,42 +25,42 @@
             </div>
         </div>
         <div class="col-md-4 col-sm-8 sidebar">
-            <div class="endLine"></div>
             <div class="row">
-                <h3>Search Product</h3>
-                <div class="input-group has-feedback">
-                    <input type="search" class="form-control" />
-                    <span class="input-group-addon form-control-feedback"><span class="glyphicon glyphicon-search"></span></span>
-                </div>
+                <h3>Find what you need</h3>
             </div>
             <div class="endLine"></div>
             <h3>Product Categories</h3>
             <div class="endLine"></div>
             <div class="row">
                 <h4 class="">Crops</h4>
-                <a href="~/Views/Crops/FoodBeverage.cshtml">Food Beverage</a>
-                <a href="~/Views/Crops/FoodItems.cshtml">Food Items</a>
-                <a href="~/Views/Crops/Fruits.cshtml">Fruit</a>
-                <a href="~/Views/Crops/Rice.cshtml">Rice</a>
+                @Html.ActionLink("Food Items", "FoodItems", "Crops")
+                @Html.ActionLink("Fruits", "Fruits", "Crops")
+                @Html.ActionLink("Rice", "Rice", "Crops")
             </div>
             <div class="endLine"></div>
             <div class="row">
                 <h4 class="">Electronics</h4>
-                <a href="~/Views/Electronics/ElectronicProducts.cshtml">Electronic Products</a>
-                <a href="~/Views/Electronics/AutoMobiles.cshtml">Auto Mobiles</a>
-                <a href="~/Views/Electronics/AutoParts.cshtml">Auto Parts</a>
+                @Html.ActionLink("Electronic Products", "ElectronicProducts", "Electronics")
+                @Html.ActionLink("Auto Mobiles", "AutoMobiles", "Electronics")
+                @Html.ActionLink("Auto Parts", "AutoParts", "Electronics")
             </div>
             <div class="endLine"></div>
             <div class="row">
                 <h4 class="">Pharmaceutical</h4>
-                <a href="~/Views/Pharmaceutical/Allopathic.cshtml">Allopathic Medicines</a>
-                <a href="~/Views/Pharmaceutical/HerbalMedicines.cshtml">Herbal Medicines</a>
+                @Html.ActionLink("Herbal Medicines", "HerbalMedicines", "Pharmaceutical")
+                @Html.ActionLink("Allopathic", "Allopathic", "Pharmaceutical")
+
             </div>
             <div class="endLine"></div>
             <div class="row">
                 <h4 class="">Sports</h4>
-                <a href="~/Views/Sports/SportMaterial.cshtml">Sport Material</a>
-                <a href="~/Views/Sports/Clothes.cshtml">Clothes</a>
+                @Html.ActionLink("Sport Materials", "SportMaterial", "Sports")
+                @Html.ActionLink("Clothes", "Clothes", "Sports")
+            </div>
+            <div class="endLine"></div>
+            <div class="row">
+                <h4 class="">Food & Beverages</h4>
+                @Html.ActionLink("Food & Beverages", "FoodBeverage", "FoodBeverage")
             </div>
         </div>
 

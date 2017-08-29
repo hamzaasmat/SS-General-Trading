@@ -6,6 +6,7 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using System.ComponentModel.DataAnnotations;
 
 namespace SS_General_Trading.Models
 {
@@ -15,8 +16,11 @@ namespace SS_General_Trading.Models
     public partial class Feedback
     {
         public int Id { get; set; }
+
+        [Required(ErrorMessage ="Name is Required!")]
         public string Name { get; set; }
         public string Email { get; set; }
+        [Required(ErrorMessage ="This field is required comment.")]
         public string Comments { get; set; }
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - SS General Trading</title>
     @*@Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")*@
 
@@ -245,14 +245,16 @@
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                         <h4>Products</h4>
                         <br />
-                           <a href="">link 1</a><br />
-                           <a href="">link 2</a><br />
-                           <a href="">link 3</a><br />
-                    </div>
-                    <div class="col-md-2">
+                        <li>@Html.ActionLink("Rice", "Rice", "Crops")</li>
+                        <li>@Html.ActionLink("Fruits", "Fruits", "Crops")</li>
+                        <li>@Html.ActionLink("Food Items", "FoodItems", "Crops")</li>
+                        <li>@Html.ActionLink("Textile", "Textile", "Textile")</li>
+                        <li>@Html.ActionLink("Food & Beverages", "FoodBeverage", "FoodBeverage")</li>
+                 </div>
+                    <div class="col-md-4">
                         <h4>Quick Links</h4>
                         <br />
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -261,23 +263,7 @@
                         <li>@Html.ActionLink("Gallery", "Gallery", "Galleries")</li>
                         <li>@Html.ActionLink("Contact", "Create", "Feedbacks")</li>
                     </div>
-                    <div class="col-md-2">
-                        <h4>About</h4>
-                        <br />
-                        <a href="">link 1</a><br />
-                        <a href="">link 2</a><br />
-                        <a href="">link 3</a><br />
-                        <a href="">link 4</a><br />
-                    </div>
-                    <div class="col-md-2">
-                        <h4>Resources</h4>
-                        <br />
-                           <a href="">link 1</a><br />
-                           <a href="">link 2</a><br />
-                           <a href="">link 3</a><br />
-                           <a href="">link 4</a><br />
-                           <a href="">link 5</a><br />
-                    </div>
+                    
                     <div class="col-md-4">
                         <div class="footer-social">
                             <a href=""><i class="fa fa-facebook-square"></i></a>
