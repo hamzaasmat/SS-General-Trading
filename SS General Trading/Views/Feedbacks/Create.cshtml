@@ -132,6 +132,11 @@
                         <input id="success" type="submit" value="Get In Touch" class="btn btn-primary btn-block btn-lg btn-login" />
                         @*<a class="btn btn-primary btn-block btn-lg" onclick="SendEmail()" >click to send email</a>*@
                     </div>
+
+                        @if (TempData["EmailSent"] != null)
+                        {
+                            <p>@TempData["EmailSent"].ToString()</p>
+                        }
                     @*<div>
                         @ViewBag.Message
                     </div>*@
@@ -169,7 +174,7 @@
 </section>
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 
-<script type="text/javascript">
+@*<script type="text/javascript">
     $(document).ready(function () {
         
         $("#success").click(function () {
@@ -178,7 +183,7 @@
 	    });
     });
 
-</script>
+</script>*@
 
 @*<script>
         $(document).ready(function () {
