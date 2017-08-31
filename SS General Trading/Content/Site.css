@@ -37,7 +37,7 @@ body{
 
 .carousel-caption {
     margin-top: 200px !important;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .5);
     padding:20px;
     height: 100%;
     width: 100%;
@@ -524,13 +524,15 @@ body{
          line-height: 25px;
          font-size: 13px;
          color: #7B8398;
+         text-align: justify;
          font-family: Open Sans
      }
      #sec-2 p{
          line-height: 25px;
          font-size: 15px;
          color: #7B8398;
-         font-family: Open Sans
+         font-family: Open Sans;
+         text-align: justify;
      }
      #sec-1 i{
          font-size: 40px;
