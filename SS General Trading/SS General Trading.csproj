@@ -471,11 +471,6 @@
     <Content Include="Views\News_Events\Edit.cshtml" />
     <Content Include="Views\News_Events\Index.cshtml" />
     <Content Include="Views\News_Events\News.cshtml" />
-    <Content Include="Views\Galleries\Create.cshtml" />
-    <Content Include="Views\Galleries\Delete.cshtml" />
-    <Content Include="Views\Galleries\Details.cshtml" />
-    <Content Include="Views\Galleries\Edit.cshtml" />
-    <Content Include="Views\Galleries\Index.cshtml" />
     <Content Include="Views\Galleries\Gallery.cshtml" />
     <Content Include="Views\Feedbacks\Create.cshtml" />
     <Content Include="Views\Feedbacks\Delete.cshtml" />

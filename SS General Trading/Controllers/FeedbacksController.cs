@@ -61,7 +61,7 @@ namespace SS_General_Trading.Controllers
                 bool result = false;
                 db.Feedbacks.Add(feedback);
                 db.SaveChanges();
-                result = SendEmail("nabiasaroosh01@gmail.com", "Feedback", "<p>Hi Admin,<br/>My name is "+ feedback.Name + ". <br/> E_mail ID: " + feedback.Email + "<br/>" + feedback.Comments + "<br/><br/>Kind Regards,<br/>" + feedback.Name + "</p>");
+                result = SendEmail("nabia.saroosh@gmail.com", "Feedback", "<p>Hi Admin,<br/>My name is "+ feedback.Name + ". <br/> E_mail ID: " + feedback.Email + "<br/>" + feedback.Comments + "<br/><br/>Kind Regards,<br/>" + feedback.Name + "</p>");
                 TempData["EmailSent"] = "Email sent succeed";
                 ModelState.Clear();
                 return View("Create");
