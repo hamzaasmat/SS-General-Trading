@@ -29,9 +29,12 @@
     }
 
         .about-overlay h4 {
-            text-align: center;
+            position: absolute;
             color: #fff;
             line-height: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             /*position: absolute;*/
             /*padding-top: 290px;*/
             font-family: Josefin Sans;
@@ -65,7 +68,7 @@
 
 <div class="bgimg">
     <div class="about-overlay">
-        <center><h4>Gallery</h4></center>
+        <h4>Gallery</h4>
     </div>
 </div>
 
@@ -85,9 +88,12 @@
             {
                 <div class="col-md-3">
                     <a href="~/Content/images/@gallery.img" data-lightbox="gallery">
-                        <div class="img-box">
+                        <figure>
                             <img src="~/Content/images/@gallery.img" />
-                        </div>
+                            <figcaption>
+                                <h3>caption</h3>
+                            </figcaption>
+                        </figure>
                     </a>
                 </div>
                 
