@@ -737,7 +737,9 @@ body{
 }
        .navbar-nav li:last-child a{
             border: 1px solid #fff !important;
-            border-radius: 25px;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-top: 5px; 
             /*text-transform: uppercase;*/
         }
        .navbar-nav li:last-child a:hover{
