@@ -11,16 +11,11 @@ namespace SS_General_Trading.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class News_Events
     {
         public int Id { get; set; }
-
-        [Required(ErrorMessage = "Name is required.")]
         public string Name { get; set; }
-
-        [Required(ErrorMessage = "Address is required.")]
         public string Address { get; set; }
     }
 }

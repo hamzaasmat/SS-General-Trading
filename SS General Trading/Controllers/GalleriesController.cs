@@ -68,11 +68,11 @@ namespace SS_General_Trading.Controllers
                             || Path.GetExtension(file.FileName).ToLower() == ".jpeg")
                         {
                             var fileName = Path.GetFileName(file.FileName);
-                            gallery.Img = Path.Combine(
+                            gallery.img = Path.Combine(
                                 Server.MapPath("~/Content/images/"), fileName);
-                            file.SaveAs(gallery.Img);
-                            file.SaveAs(gallery.Img);
-                            gallery.Img = file.FileName;
+                            file.SaveAs(gallery.img);
+                            file.SaveAs(gallery.img);
+                            gallery.img = file.FileName;
                             ViewBag.UploadSuccess = true;
                         }
                         else {
@@ -107,7 +107,7 @@ namespace SS_General_Trading.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Img")] Gallery gallery)
+        public ActionResult Edit([Bind(Include = "Id,name,img")] Gallery gallery)
         {
             if (ModelState.IsValid)
             {

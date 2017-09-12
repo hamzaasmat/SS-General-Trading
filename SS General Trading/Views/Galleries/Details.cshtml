@@ -1,8 +1,4 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout - admin.cshtml";
-}
-
-@model SS_General_Trading.Models.Gallery
+﻿@model SS_General_Trading.Models.Gallery
 
 @{
     ViewBag.Title = "Details";
@@ -10,17 +6,24 @@
 
 <h2>Details</h2>
 
-<div class="box">
-    <h4>Image Details</h4>
+<div>
+    <h4>Gallery</h4>
     <hr />
     <dl class="dl-horizontal">
-        
         <dt>
-            @Html.DisplayNameFor(model => model.Img)
+            @Html.DisplayNameFor(model => model.name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Img)
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.img)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img)
         </dd>
 
     </dl>

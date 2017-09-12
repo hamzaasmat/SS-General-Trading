@@ -11,12 +11,11 @@ namespace SS_General_Trading.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Gallery
     {
         public int Id { get; set; }
-
-        public string Img { get; set; }
+        public string name { get; set; }
+        public string img { get; set; }
     }
 }
