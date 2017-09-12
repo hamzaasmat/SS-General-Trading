@@ -263,6 +263,10 @@
     <Content Include="App_Data\aspnet-SS General Trading-20170717020240_log.ldf">
       <DependentUpon>aspnet-SS General Trading-20170717020240.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\aspnet-SS General Trading-20170814110254.mdf" />
+    <Content Include="App_Data\aspnet-SS General Trading-20170814110254_log.ldf">
+      <DependentUpon>aspnet-SS General Trading-20170814110254.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\admin-content.css" />
     <Content Include="Content\admin-js.js" />
     <Content Include="Content\admin.css" />
@@ -274,6 +278,12 @@
     <Content Include="Content\beverge\rr.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\electronics\light-car-inside-black.jpg" />
+    <Content Include="Content\electronics\pexels-photo-207555.jpeg" />
+    <Content Include="Content\electronics\pexels-photo-209666.jpeg" />
+    <Content Include="Content\electronics\pexels-photo-251225.jpeg" />
+    <Content Include="Content\electronics\pexels-photo-279906.jpeg" />
+    <Content Include="Content\electronics\vehicle-chrome-technology-automobile-65623.jpeg" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
@@ -305,6 +315,7 @@
     <Content Include="Content\images\hand.jpg" />
     <Content Include="Content\images\News.jpg" />
     <Content Include="Content\images\pexels-photo-164531.jpeg" />
+    <Content Include="Content\images\pexels-photo-427679.jpeg" />
     <Content Include="Content\images\photo-1479243396208-be1751535cdb.jpg" />
     <Content Include="Content\images\s7.jpg" />
     <Content Include="Content\images\ser.jpg" />
@@ -346,6 +357,19 @@
     <Content Include="Content\textile\t2.jpg" />
     <Content Include="Content\textile\t3.jpg" />
     <Content Include="Content\textile\t5.png" />
+    <Content Include="Content\WOW-master\.gitignore" />
+    <Content Include="Content\WOW-master\css\libs\animate.css" />
+    <Content Include="Content\WOW-master\css\site.css" />
+    <Content Include="Content\WOW-master\demo.html" />
+    <Content Include="Content\WOW-master\dist\wow.js" />
+    <Content Include="Content\WOW-master\dist\wow.min.js" />
+    <Content Include="Content\WOW-master\Gruntfile.js" />
+    <Content Include="Content\WOW-master\spec\javascripts\fixtures\custom.html" />
+    <Content Include="Content\WOW-master\spec\javascripts\fixtures\simple.html" />
+    <Content Include="Content\WOW-master\spec\javascripts\helpers\SpecHelper.js" />
+    <Content Include="Content\WOW-master\spec\javascripts\libs\jasmine-jquery.js" />
+    <Content Include="Content\WOW-master\spec\javascripts\libs\jquery.js" />
+    <Content Include="Content\WOW-master\spec\javascripts\wow-spec.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -410,6 +434,13 @@
     <Content Include="Models\SSGeneralTrading.edmx.diagram">
       <DependentUpon>SSGeneralTrading.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\WOW-master\.travis.yml" />
+    <Content Include="Content\WOW-master\bower.json" />
+    <Content Include="Content\WOW-master\package.json" />
+    <Content Include="Content\WOW-master\README.md" />
+    <Content Include="Content\WOW-master\spec\coffeescripts\helpers\SpecHelper.coffee" />
+    <Content Include="Content\WOW-master\spec\coffeescripts\wow-spec.coffee" />
+    <Content Include="Content\WOW-master\src\wow.coffee" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
