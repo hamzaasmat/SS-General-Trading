@@ -3,41 +3,46 @@
 }
 
 @model IEnumerable<SS_General_Trading.Models.Gallery>
-</br></br>
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.img)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.img)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
-
-</table>
+<div class="row" style="padding: 0px 20px 0px 20px;">
+          <h3 class="pull-left">Gallery</h3>
+          <a href="/Galleries/Create" class="btn btn-primary pull-right" style="margin-top: 10px;"><span class="fa fa-plus-square"></span>&nbsp; Create New</a>
+    </div>
+    <div class="box">
+       <table class="table table-striped" cellpadding="10" cellspacing="10">
+        <thead>
+          <tr>
+             <th>
+                 @*@Html.DisplayNameFor(model => model.name)*@
+                 Name
+             </th>
+             <th>
+                 @*@Html.DisplayNameFor(model => model.img)*@
+                 Images
+             </th>
+             <th></th>
+             </tr>
+            </thead>
+           <tbody>
+                  @foreach (var item in Model) {
+             <tr>
+                 <td>
+                      @Html.DisplayFor(modelItem => item.name)
+                 </td>
+                 <td>
+                      @Html.DisplayFor(modelItem => item.img)
+                 </td>
+                 <td>
+                      @Html.ActionLink("Edit", "Edit", new { id=item.Id },  new { @class = "btn btn-primary edit", @datatoggle = "tooltip" }) 
+                      @Html.ActionLink("Details", "Details", new { id=item.Id }, new { @class = "btn btn-success detail", @datatoggle = "tooltip" }) 
+                      @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { @class = "btn btn-danger delete", @datatoggle = "tooltip" })
+                 </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+ <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+ <script src="~/Content/admin-js.js"></script>
