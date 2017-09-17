@@ -37,7 +37,7 @@ body{
 
 .carousel-caption {
     margin-top: 200px !important;
-    background: rgba(0,0,0,.5);
+    background: transparent !important;
     padding:20px;
     height: 100%;
     width: 100%;
@@ -50,7 +50,8 @@ body{
     display: block;
     font-size: 50px;
     position: relative;
-    text-shadow: 1px 1px rgba(0,0,0,.17);
+    /*text-shadow: 1px 1px rgba(0,0,0,.17);*/
+    text-shadow: 1px 1px 2px #000000;
     font-family: Open Sans;
     animation-delay: .5s;
     opacity: .7;
@@ -80,6 +81,7 @@ body{
     padding-right: 200px;
     margin-bottom: 20px;
     animation-delay: 2s;
+    text-shadow: 1px 1px 2px #000000;
 }
 .carousel-indicators li{
     display: inline-block;
@@ -439,13 +441,13 @@ body{
 }
 
 #bg {
-    background-image: url('images/photo-1479243396208-be1751535cdb.jpg');
+    background-image: url('images/s7.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     height: 400px;
     position: relative;
-    z-index:-5;
+    z-index: -5;
 }
 
  /*news box*/
