@@ -47,6 +47,10 @@
         }
         input[type=text]{
             border-radius: 30px;
+            outline: none;
+        }
+        input[type=text]:focus{
+            border: 1px solid red;
         }
         input[type=submit]{
             box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2) !important;
@@ -63,17 +67,16 @@
             height: 200px;
             width: 100%;
             resize: none;
-            border-radius: 30px !important;
-            border: 1px solid #aaa;
-            /*border-bottom: 2px solid #aaa;*/
+            border-bottom: 2px solid #aaa !important;
             text-shadow: none !important;
             outline: none !important;
             padding: 10px !important;
             font-size: 18px;
             line-height: 1.33;
+            border: none;
         }
         textarea:focus{
-             /*border-bottom: 2px solid red;*/
+             border-bottom: 2px solid red !important;
         }
         label{
             font-weight: 100;

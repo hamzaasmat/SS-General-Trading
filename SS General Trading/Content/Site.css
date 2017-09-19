@@ -216,12 +216,6 @@ body{
         width: 100%;
         text-align:center;
     }
-    .navbar-inverse .navbar-brand img{
-        width: 50px !important; 
-        height: 55px !important;
-        margin-top: 10px;
-    }
-    
 }
 
 
